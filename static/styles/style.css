@@ -1,0 +1,20 @@
+* {
+    color: white;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.logo {
+  margin-top: 2%;
+  display: inline-block;
+  border-radius: 50%;
+  width: 7vh;
+}
+
+@media (max-width: 380px) {
+  .logo {
+    width: 5vh;
+  }
+}

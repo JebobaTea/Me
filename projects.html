@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JebobaTea</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/styles/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="btn btn-ghost normal-case text-xl xs:text-xs" href="/index.html">Homepage</a></li>
+            <li><a class="btn btn-ghost normal-case text-xl xs:text-xs" href="/projects.html">My Projects</a></li>
+            <li><a class="btn btn-ghost normal-case text-xl xs:text-xs" href="https://github.com/JebobaTea">Github</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost normal-case text-xl">JebobaTea</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+    <div class="hero min-h-screen" style="background-image: url(https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg);">
+      <div class="hero-content text-center text-neutral-content">
+        <div>
+          <h1 class="mb-5 text-5xl lg:text-7xl font-bold">My Projects</h1>
+        </div>
+      </div>
+    </div>
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content text-center">
+        <h1 style="margin-right: 5%;">
+          <p class="text-5xl lg:text-7xl font-bold">Web Development</p><br>
+          <p style="font-size: 1.5vw">Always looking to learn new things</p>
+          <img class="logo" src="/static/images/logo1.jpg">
+          <img class="logo" src="/static/images/logo2.jpg">
+          <img class="logo" src="/static/images/logo3.jpg">
+          <img class="logo" src="/static/images/logo5.jpg">
+        </h1>
+      </div>
+    </div>
+    <div id="c1" class="hero min-h-screen bg-base-200" style="background-image: url(https://cdn.pixabay.com/photo/2017/05/22/13/36/water-lily-2334209_960_720.jpg);">
+      <div class="carousel rounded-box w-full">
+        <div id="slide1" class="flex carousel-item relative w-full justify-center">
+          <div class="card card-side bg-neutral glass text-primary-content">
+            <figure><img style="max-height: 280px;" src="https://imgs.search.brave.com/7KT61eTkgq4PjRs4jL3qU3ef2ou8Pq5XrVg8YC6TfB4/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDcwNzYw/NzYuanBn"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">HySkyAuctions</h2>
+              <p>Provide a fast and easy-to-use website to view ingame auction prices for Hypixel Skyblock<br>along with a suite of tools for profit calculation</p>
+              <div class="card-actions justify-end">
+                <button class="btn"><a href="https://github.com/JebobaTea/HySkyAuctions">View on Github</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" onclick="scrollToFirstCarousel()" class="btn btn-circle">❮</a>
+            <a href="#slide2" onclick="scrollToFirstCarousel()" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="flex carousel-item relative w-full justify-center">
+          <div class="card card-side bg-neutral glass text-primary-content">
+            <figure><img style="max-height: 280px;" src="https://i.imgur.com/QkbsUze.png"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">SNAP</h2>
+              <p>Website to showcase photos | Experimentation with scrolling speeds in Rellax.js</p>
+              <div class="card-actions justify-end">
+                <button class="btn"><a href="https://snap.jebobatea.repl.co">View Site</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" onclick="scrollToFirstCarousel()" class="btn btn-circle">❮</a>
+            <a href="#slide3" onclick="scrollToFirstCarousel()" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="flex carousel-item relative w-full justify-center">
+          <div class="card card-side bg-neutral glass text-primary-content">
+            <figure><img style="max-height: 280px;" src="https://i.imgur.com/Gk8M7eV.png"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">Tagging</h2>
+              <p>Tag images with clickable buttons which scale along<br>with client-side dimensions when exported as raw HTML</p>
+              <div class="card-actions justify-end">
+                <button class="btn">Work In Progress</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" onclick="scrollToFirstCarousel()" class="btn btn-circle">❮</a>
+            <a href="#slide1" onclick="scrollToFirstCarousel()" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content text-center w-full">
+        <h1 style="margin-right: 5%;">
+          <p class="text-5xl lg:text-7xl font-bold">Python</p><br>
+          <p style="font-size: 1.5vw">Passionate about problem solving</p>
+          <img class="logo" src="/static/images/logo1.jpg">
+          <img class="logo" src="/static/images/logo4.jpg">
+        </h1>
+      </div>
+    </div>
+    <div class="hero min-h-screen bg-base-200" style="background-image: url(https://cdn.pixabay.com/photo/2016/09/03/23/18/rose-1642970_960_720.jpg);">
+      <div class="carousel rounded-box w-full">
+        <div id="slidea" class="flex carousel-item relative w-full justify-center">
+          <div class="card card-side bg-neutral glass text-primary-content">
+            <figure><img style="max-height: 280px;" src="https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659_960_720.jpg"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">Astraea</h2>
+              <p>Simple and lightweight Discord utility bot.</p>
+              <div class="card-actions justify-end">
+                <button class="btn"><a href="https://github.com/JebobaTea/Astraea">View on Github</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slidec" class="btn btn-circle">❮</a>
+            <a href="#slideb" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slideb" class="flex carousel-item relative w-full justify-center">
+          <div class="card card-side bg-neutral glass text-primary-content">
+            <figure><img style="max-height: 280px;" src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_960_720.jpg"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">SkyAuctionSniper</h2>
+              <p>Snipe abnormally low auctions and look for large margins between in-game prices using Hypixel's API</p>
+              <div class="card-actions justify-end">
+                <button class="btn"><a href="https://github.com/JebobaTea/SkyAuctionSniper">View on Github</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slidea" class="btn btn-circle">❮</a>
+            <a href="#slidec" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slidec" class="flex carousel-item relative w-full justify-center">
+          <div class="card card-side bg-neutral glass text-primary-content">
+            <figure><img style="max-height: 280px;" src="https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631_960_720.jpg"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">Cadenza</h2>
+              <p>Download and play music on Discord using youtube-dl and ffmpeg</p>
+              <div class="card-actions justify-end">
+                <button class="btn"><a href="https://github.com/JebobaTea/Cadenza">View on Github</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slideb" class="btn btn-circle">❮</a>
+            <a href="#slidea" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const delay = ms => new Promise(res => setTimeout(res, ms));
+
+      var scrollToFirstCarousel = async () => {
+        await delay(1);
+        document.getElementById("c1").scrollIntoView();
+      }
+    </script>
+  </body>
+</html>
